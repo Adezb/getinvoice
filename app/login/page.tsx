@@ -46,6 +46,7 @@ export default async function Login() {
                 await signIn("nodemailer", formData);
               }}
               className="flex flex-col gap-y-4"
+              autoComplete="off"
             >
               <div className="flex flex-col gap-y-2">
                 <Label>Email</Label>

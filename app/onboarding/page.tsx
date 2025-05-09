@@ -49,6 +49,7 @@ export default function Onboarding() {
             id={form.id}
             onSubmit={form.onSubmit}
             noValidate
+            autoComplete="off"
           >
             <div className="grid grid-cols-2 gap-4">
               <div className="flex flex-col gap-2">

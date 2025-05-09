@@ -64,6 +64,7 @@ export default async function MarkAsPaid({ params }: { params: Params }) {
               "use server";
               await MarkAsPaidAction(invoiceId);
             }}
+            autoComplete="off"
           >
             <SubmitButton text="Mark ad Paid!" />
           </form>

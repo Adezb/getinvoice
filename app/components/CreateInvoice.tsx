@@ -19,7 +19,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import { cn } from "@/lib/utils";
 import { CalendarIcon } from "lucide-react";
 import { useActionState, useState } from "react";
 import { SubmitButton } from "./SubmitButtons";
@@ -66,7 +65,13 @@ export function CreateInvoice({
   return (
     <Card className="w-full max-w-4xl mx-auto">
       <CardContent className="p-6">
-        <form id={form.id} action={action} onSubmit={form.onSubmit} noValidate>
+        <form
+          id={form.id}
+          action={action}
+          onSubmit={form.onSubmit}
+          noValidate
+          autoComplete="off"
+        >
           <input
             type="hidden"
             name={fields.date.name}

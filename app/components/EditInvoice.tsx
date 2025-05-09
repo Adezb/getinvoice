@@ -57,7 +57,13 @@ export function EditInvoice({ data }: iAppProps) {
   return (
     <Card className="w-full max-w-4xl mx-auto">
       <CardContent className="p-6">
-        <form id={form.id} action={action} onSubmit={form.onSubmit} noValidate>
+        <form
+          id={form.id}
+          action={action}
+          onSubmit={form.onSubmit}
+          noValidate
+          autoComplete="off"
+        >
           <input
             type="hidden"
             name={fields.date.name}
