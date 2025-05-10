@@ -25,7 +25,7 @@ import { useActionState, useState } from "react";
 import { useForm } from "@conform-to/react";
 import { parseWithZod } from "@conform-to/zod";
 import { invoiceSchema } from "../utils/zodSchemas";
-import { createInvoice, editInvoice } from "../actions";
+import { editInvoice } from "../actions";
 import { formatCurrency } from "../utils/formatCurrency";
 import { Prisma } from "@prisma/client";
 
